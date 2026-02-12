@@ -1,12 +1,12 @@
 # GORG-Dark-Rhodopsins
-Rhodopsin analysis for "Single-cell-resolved genome atlas of prokaryoplankton inhabiting the ocean’s interior" by Chang et al.
+This github describes how rhodopsins from the dark ocean were analyzed for the study "Single-cell-resolved genome atlas of prokaryoplankton inhabiting the ocean’s interior" by Chang et al.
 
 **PRIOR TO ANALYSIS IN THIS GITHUB**<br>
 Two steps were taken to identify rhodopsin candidates. Quotes reflect methods passages from Chang et al.
 1. **DRAM to identify preliminary rhodopsins**
 Each Single Amplified Genome (SAG) was subjected to DRAM v1.4 to predict its CDS, proteins, and their annotations. (DRAM was run in default mode, configured with its core set of curated HMM databases (i.e., without KEGG or other customized databases), and applied the additional parameter --min_contig_size 2000 to skip annotating contigs shorter than 2 kbp.
 2. **Rhodopsin validation via alignment and phylogeny**
-"We further validated these via amino acid alignment against two atomic structure-resolved rhodopsins: pdb_00001c3w and pdb_00002l6x, which have leucine and glutamine as their key tuning residues, respectively. We aligned the proteins using MAFFT37 with default parameters. Each GORG-Dark rhodopsin in the alignment was inspected for the presence or absence of canonical rhodopsin residues, such as (1) the lysine (position 591 in the alignment) in the seventh transmembrane helix to which retinal is typically bound, (2) the leucine or glutamine  (position 390) associated with spectral tuning for the absorption of blue or green or blue light, and (3) the DTD/DTE or TSA motif (positions 382, 386, and 393) that indicates proton pumping or chloride activity. We discarded rhodopsin candidates that could not be aligned or that were too short to contain phylogenetic signal. 
+"We further validated these via amino acid alignment against two atomic structure-resolved rhodopsins: pdb_00001c3w and pdb_00002l6x, which have leucine and glutamine as their key tuning residues, respectively. We aligned the proteins using MAFFT37 with default parameters. Each GORG-Dark rhodopsin in the alignment was inspected for the presence or absence of canonical rhodopsin residues, such as (1) the lysine (position 591 in the alignment) in the seventh transmembrane helix to which retinal is typically bound, (2) the leucine or glutamine  (position 390) associated with spectral tuning for the absorption of blue or green or blue light, and (3) the DTD/DTE or TSA motif (positions 382, 386, and 393) that indicates proton pumping or chloride activity. We discarded rhodopsin candidates that could not be aligned or that were too short to contain phylogenetic signal." 
 
 **PERFORMED IN THIS GITHUB:**
 \[Brackets refer to github folders where the step occurred\]<br>
@@ -19,8 +19,8 @@ Each Single Amplified Genome (SAG) was subjected to DRAM v1.4 to predict its CDS
 >
 
 <ins>Tabulate alphafold information (i.e. whether each rhodopsin had an 8th helix)</ins>
->
-Beyond their phylogenomic context, predicting protein function also requires consideration of 3D structures. While in-silico approaches are at best heuristic, we used AlphaFold v3.0.1 52 to generate a preliminary model of each GORG-Dark rhodopsin. We visually inspected these 3D models in the webserver PAE Viewer to look for structural features that could be distinctive for GORG Dark rhodopsin clades 53. If an eight helix was found at the N-terminus of a rhodopsin, we considered it as ‘present’ if it had at least two helical rotations predicted by AlphaFold **[7]**.
+
+> "Beyond their phylogenomic context, predicting protein function also requires consideration of 3D structures. While in-silico approaches are at best heuristic, we used AlphaFold v3.0.1 52 to generate a preliminary model of each GORG-Dark rhodopsin. We visually inspected these 3D models in the webserver PAE Viewer to look for structural features that could be distinctive for GORG Dark rhodopsin clades 53. If an eight helix was found at the N-terminus of a rhodopsin, we considered it as ‘present’ if it had at least two helical rotations predicted by AlphaFold **[7]**."
 >
 
 **FINAL DATA PRODUCT**<br>
