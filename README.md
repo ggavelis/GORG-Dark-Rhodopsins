@@ -23,5 +23,8 @@ Each Single Amplified Genome (SAG) was subjected to DRAM v1.4 to predict its CDS
 Beyond their phylogenomic context, predicting protein function also requires consideration of 3D structures. While in-silico approaches are at best heuristic, we used AlphaFold v3.0.1 52 to generate a preliminary model of each GORG-Dark rhodopsin. We visually inspected these 3D models in the webserver PAE Viewer to look for structural features that could be distinctive for GORG Dark rhodopsin clades 53. If an eight helix was found at the N-terminus of a rhodopsin, we considered it as ‘present’ if it had at least two helical rotations predicted by AlphaFold **[7]**.
 >
 
-**FINAL DATA PRODUCT**
+**FINAL DATA PRODUCT**<br>
+[Supplementary Table 8](https://github.com/ggavelis/GORG-Dark-Rhodopsins/blob/main/Table_S8_Rhodopsin_sequences_metadata_and_gene_neighborhoods.tsv)<br>
+Which provides functional and evolutionary information about GORG-Dark rhodopsins,<br>
+as visualized in [Figure 4] (https://itol.embl.de/tree/12812822615690281732644278#)<br>
 
